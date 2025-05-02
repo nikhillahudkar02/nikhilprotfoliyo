@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atul's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #343a40;
+            color: white;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        
+        .card,
+        .grid-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        .button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-text {
+            flex: 1 1 60%;
+        }
+        
+        .hero-img {
+            flex: 1 1 35%;
+            text-align: center;
+        }
+        
+        .hero-img img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #007bff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-img {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 style="text-align:center;">Nikhil's Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="card hero">
+            <div class="hero-text">
+                <h2>Welcome</h2>
+                <p>Hello! I'm nikhil, a BCA student and aspiring data analyst with skills in web development, digital marketing, and more. Explore my portfolio to learn more about my work, experience, and technical background.</p>
+                <a href="#about" class="button">Explore More</a>
+            </div>
+            <div class="hero-img">
+                <img src="nikhil.jpg" alt="nikhil Photo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I'm currently pursuing a Bachelor of Computer Applications (BCA) at Sant Gadge Baba Amravati University. My interests lie in data analytics, web development, and AI tools integration. I am passionate about creating impactful digital solutions
+                and working on real-world projects.</p>
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="card">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <p><strong>Bachelor of Computer Applications (BCA)</strong> – Sant Gadge Baba Amravati University</p>
+
+            <h3>Experience</h3>
+            <ul>
+
+                <li>Data Science Intern – CodSoft (1 month)</li>
+                <li>Freelancer – Web Design, SEO, Mobile UI/UX</li>
+            </ul>
+
+            <h3>Projects</h3>
+            <ul>
+                <li>Attendance Management System – Node.js & MongoDB</li>
+                <li>Ecommerce website – Gemini API + Firebase</li>
+                <li>Healthcare Dashboard – Power BI & MS Excel</li>
+                <li>Authentication System – HTML/CSS/JS + Firebase/EmailJS OTP</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills and Certifications -->
+    <section id="skills">
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="grid-item">Python</div>
+                <div class="grid-item">JavaScript</div>
+                <div class="grid-item">HTML & CSS</div>
+                <div class="grid-item">MySQL</div>
+                <div class="grid-item">Node.js</div>
+                <div class="grid-item">Firebase</div>
+                <div class="grid-item">Power BI</div>
+                <div class="grid-item">Digital Marketing</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Certifications</h2>
+            <div class="grid">
+                <div class="grid-item">Google Data Analytics</div>
+                <div class="grid-item">Python for Everybody – Coursera</div>
+                <div class="grid-item">CodSoft Internship Certificate</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 NIkhil | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
